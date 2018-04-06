@@ -329,7 +329,7 @@ public class Einstein_PlaygroundController {
 
         //null check
         if (data.isEmpty()){
-            throw new AuraHandledException('There is no valid data for that object and those fields');
+            throw new AuraHandledException('このオブジェクトの項目には有効なデータがありません');
         }
 		list<string> lines = new list<string>();
 

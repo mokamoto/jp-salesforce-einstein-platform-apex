@@ -11,7 +11,7 @@ fi
 
 _APEX_OUTPUT="apex.output"
 
-echo "Einstein Platform User: $USERNAME" 
+echo "Einstein Platform User: $USERNAME"
 echo "Einstein Platform File: $FILE"
 echo ""
 echo "Creating Apex file"

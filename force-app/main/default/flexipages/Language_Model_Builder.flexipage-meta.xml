@@ -7,7 +7,7 @@
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Language Model Builder</masterLabel>
+    <masterLabel>言語モデルビルダー</masterLabel>
     <template>
         <name>flexipage:defaultAppHomeTemplate</name>
     </template>

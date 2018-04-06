@@ -7,13 +7,13 @@
         let dataType = component.get("v.dataType");
         let models = [];
         if (dataType === 'image'){
-            models.push({ id: "GeneralImageClassifier", label: "Pre-Built - General Image Classifier" });
-            models.push({ id: "FoodImageClassifier", label: "Pre-Built - Food Image Classifier" });
-            models.push({ id: "SceneClassifier", label: "Pre-Built - Scene Image Classifier" });
+            models.push({ id: "GeneralImageClassifier", label: "プリビルド - General Image Classifier" });
+            models.push({ id: "FoodImageClassifier", label: "プリビルド - Food Image Classifier" });
+            models.push({ id: "SceneClassifier", label: "プリビルド - Scene Image Classifier" });
         } else if (dataType === 'text-sentiment'){
-            models.push({ id: "CommunitySentiment", label: "Pre-Built - Community Sentiment" });
+            models.push({ id: "CommunitySentiment", label: "プリビルド - Community Sentiment" });
         } else if (dataType === 'image-multi-label') {
-            models.push({ id: "MultiLabelImageClassifier", label: "Pre-Built - Multi-Label Image Classifier" });
+            models.push({ id: "MultiLabelImageClassifier", label: "プリビルド - Multi-Label Image Classifier" });
         }
 
         // add any custom models to the default if they exist

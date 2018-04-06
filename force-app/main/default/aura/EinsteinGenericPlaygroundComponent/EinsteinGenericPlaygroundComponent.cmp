@@ -10,13 +10,13 @@
 	<div>
 
 		<lightning:tabset>
-			<lightning:tab label="1. Datasets and Models">
+			<lightning:tab label="1. データセットとモデル">
 				<c:EinsteinDataAndTraining dataType="{!v.dataType}" />
 			</lightning:tab>
-			<lightning:tab label="2. Prediction">
+			<lightning:tab label="2. 予測">
 				<c:EinsteinPredictionArea dataType="{!v.dataType}" allModelsByType="{!v.allModelsByType}" iconName="{!v.iconName}"/>
 			</lightning:tab>
-			<lightning:tab label="3. Dataset Creation">
+			<lightning:tab label="3. データセット作成">
 				<c:EinsteinDatasetCreation dataType="{!v.dataType}" />
 			</lightning:tab>
 		</lightning:tabset>

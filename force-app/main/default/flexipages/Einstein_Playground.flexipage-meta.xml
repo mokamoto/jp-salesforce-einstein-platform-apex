@@ -15,7 +15,7 @@
         <name>region3</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Einstein Playground</masterLabel>
+    <masterLabel>Einstein プレイグラウンド</masterLabel>
     <template>
         <name>flexipage:appHomeTemplateHeaderTwoColumnsLeftSidebar</name>
     </template>

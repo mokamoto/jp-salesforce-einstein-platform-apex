@@ -40,7 +40,7 @@
 	toastThis : function(message, title) {
 		let toastEvent = $A.get("e.force:showToast");
 		toastEvent.setParams({
-			"title": title || "Error:",
+			"title": title || "エラー:",
 			"message": message,
 			"type": "error",
 			"mode": "sticky"

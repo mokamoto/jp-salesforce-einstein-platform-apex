@@ -5,21 +5,21 @@
 
 	<aura:attribute name="usage" type="object[]"/>
 
-	<lightning:card title="Prediction Usage">
+	<lightning:card title="予測の利用状況">
 		<table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
 			<thead>
 				<tr class="slds-text-title_caps">
 					<th scope="col">
-						<div class="slds-truncate" title="Start">Start</div>
+						<div class="slds-truncate" title="Start">開始</div>
 					</th>
 					<th scope="col">
-						<div class="slds-truncate" title="End">End</div>
+						<div class="slds-truncate" title="End">終了</div>
 					</th>
 					<th scope="col">
-						<div class="slds-truncate" title="Used">Used</div>
+						<div class="slds-truncate" title="Used">利用済み</div>
 					</th>
 					<th scope="col">
-						<div class="slds-truncate" title="Remaining">Remaining</div>
+						<div class="slds-truncate" title="Remaining">残り</div>
 					</th>
 				</tr>
 			</thead>

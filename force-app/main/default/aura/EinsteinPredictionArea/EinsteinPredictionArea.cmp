@@ -28,7 +28,7 @@
 
 	<lightning:layout class="slds-m-around_small">
 		<lightning:layoutitem size="6" padding="around-small" class="border-right">
-			<div class="slds-text-heading_medium slds-m-bottom_small"><b>Request</b></div>
+			<div class="slds-text-heading_medium slds-m-bottom_small"><b>送信</b></div>
 
 			<div class="slds-m-bottom_small">
 				<c:EinsteinModelSelect dataType="{!v.dataType}" allModels="{!v.allModelsByType}" modelId="{!v.modelId}"/>
@@ -38,7 +38,7 @@
 
 				<lightning:layout class="slds-m-bottom_small" verticalAlign="end" pullToBoundary="small">
 					<lightning:layoutItem flexibility="grow" padding="around-small">
-						<lightning:input aura:id="urlInput" type="url" name="url" label="Image URL" value="{!v.imageURL}" />
+						<lightning:input aura:id="urlInput" type="url" name="url" label="画像URL" value="{!v.imageURL}" />
 					</lightning:layoutItem>
 					<lightning:layoutItem flexibility="shrink" padding="around-small">
 						<lightning:button label="Send" onclick="{!c.predictURL}" disabled="{!empty(v.imageURL)}" />
@@ -47,7 +47,7 @@
 
 				<div class="slds-m-bottom_small">
 					<lightning:input aura:id="fileInput" type="file" name="file" multiple="false" accept="image/*;capture=camera" files="{!v.files}"
-					onchange="{! c.readFile }" label="Image (max. 5MB):" />
+					onchange="{! c.readFile }" label="画像 (最大5MBまで):" />
 				</div>
 
 
@@ -56,15 +56,15 @@
 			</aura:if>
 
 			<aura:if isTrue="{!v.dataType == 'text-sentiment' || v.dataType == 'text-intent'}">
-				<lightning:textarea label="Text:" value="{!v.phrase}"/>
-				<lightning:button label="Send" onclick="{!c.predict}" disabled="{!empty(v.phrase)}" />
+				<lightning:textarea label="テキスト:" value="{!v.phrase}"/>
+				<lightning:button label="送信" onclick="{!c.predict}" disabled="{!empty(v.phrase)}" />
 			</aura:if>
 
 		</lightning:layoutitem>
 		<lightning:layoutitem size="6" padding="around-small">
-			<div class="slds-text-heading_medium slds-m-bottom_small"><b>Response</b></div>
+			<div class="slds-text-heading_medium slds-m-bottom_small"><b>受信</b></div>
 			<lightning:tabset >
-				<lightning:tab label="Formatted">
+				<lightning:tab label="整形済み">
 
 					<aura:if isTrue="{!v.dataType!='image-detection'}">
 						<aura:iteration items="{!v.predictions}" var="prediction">

@@ -82,12 +82,12 @@
       } else {
         var toastEvent = $A.get("e.force:showToast");
         toastEvent.setParams({
-          title: "Success!",
+          title: "成功!",
           type: "success",
           message:
-            "The model id for the training is " +
+            "この学習のモデルIdは " +
             response.getReturnValue() +
-            ". Refresh the dataset for seeing the training progress."
+            " です。データセットの再読み込みで学習の進行状況を確認できます。"
         });
         toastEvent.fire();
       }

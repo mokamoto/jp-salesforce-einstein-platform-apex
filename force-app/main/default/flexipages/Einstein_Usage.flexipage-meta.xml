@@ -7,7 +7,7 @@
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Einstein Usage</masterLabel>
+    <masterLabel>Einstein 利用状況</masterLabel>
     <template>
         <name>flexipage:defaultAppHomeTemplate</name>
     </template>

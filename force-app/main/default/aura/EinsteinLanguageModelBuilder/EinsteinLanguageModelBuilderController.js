@@ -111,7 +111,7 @@
                         // $A.get("e.ltng:sendMessage")
                         //     .setParams({ "message": "message", "newDataset": "EinsteinDatasetCreation" })
                         //     .fire();
-                        $A.get("e.force:showToast").setParams({ "type": "success", "message": "Dataset Created!" }).fire();
+                        $A.get("e.force:showToast").setParams({ "type": "success", "message": "データセットが作成されました!" }).fire();
                     } else if (b.getState() === "ERROR") {
                         console.log(b.getError());
                         component.find("leh").passErrors(b.getError());

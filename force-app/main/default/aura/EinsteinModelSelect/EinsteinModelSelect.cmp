@@ -10,7 +10,7 @@
 
 	<c:LightningErrorHandler aura:id="leh"/>
 
-	<lightning:select aura:id="selectModel" name="selectModel" label="Pick a Model:" required="true" onchange="{!c.valueChanged}">
+	<lightning:select aura:id="selectModel" name="selectModel" label="モデルを選択:" required="true" onchange="{!c.valueChanged}">
 		<aura:iteration items="{!v.selectionModels}" var="model">
 			<option value="{!model.id}" text="{!model.label}" selected="{!model.selected}"></option>
 		</aura:iteration>

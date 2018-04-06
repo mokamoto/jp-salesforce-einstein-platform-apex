@@ -2,7 +2,7 @@
 <CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Created by Lightning App Builder</description>
     <flexiPage>Language_Model_Builder</flexiPage>
-    <label>Language Model Builder</label>
+    <label>言語モデルビルダー</label>
     <mobileReady>true</mobileReady>
     <motif>Custom35: Microphone</motif>
 </CustomTab>

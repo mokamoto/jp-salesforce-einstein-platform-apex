@@ -8,7 +8,7 @@
     <aura:handler name="init" value="{!this}" action="{!c.onLoadDatasets}" />
     <aura:handler event="ltng:sendMessage" action="{!c.messageHandler}"/>
 
-    <lightning:button variant="brand" onclick="{!c.onLoadDatasets}">Refresh Datasets</lightning:button>
+    <lightning:button variant="brand" onclick="{!c.onLoadDatasets}">データセットの再読込</lightning:button>
 
     <lightning:layout multipleRows="true">
         <aura:iteration items="{!v.datasets}" var="dataset">

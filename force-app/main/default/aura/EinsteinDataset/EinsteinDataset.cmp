@@ -22,24 +22,24 @@
             <aura:set attribute="actions">
                 <aura:if isTrue="{!v.currentTab=='labels'}">
                     <aura:if isTrue="{!and ( v.models.length>0 , v.models[0].status=='SUCCEEDED')}">
-                        <lightning:button variant="brand" label="Retrain" onclick="{!c.onReTrainModel}" />
+                        <lightning:button variant="brand" label="再学習" onclick="{!c.onReTrainModel}" />
                     </aura:if>
-                    <lightning:button label="Train" onclick="{!c.onTrainModel}" />
-                    <lightning:button label="Delete" onclick="{!c.onDeleteDataset}" />
+                    <lightning:button label="学習" onclick="{!c.onTrainModel}" />
+                    <lightning:button label="削除" onclick="{!c.onDeleteDataset}" />
                 </aura:if>
                 <aura:if isTrue="{!v.currentTab=='models'}">
-                    <lightning:button label="Refresh Models" onclick="{!c.onRefresh}" />
+                    <lightning:button label="モデルの更新" onclick="{!c.onRefresh}" />
                 </aura:if>
             </aura:set>
 
             <aura:set attribute="footer">
                 <ul class="slds-list_horizontal slds-has-dividers_left slds-text-body_small">
-                    <li class="slds-item">Dataset Id:{!v.dataset.id}</li>
-                    <li class="slds-item">Created:<lightning:formattedDateTime value="{!v.dataset.createdAt}"/></li>
-                    <li class="slds-item">Updated:<lightning:formattedDateTime value="{!v.dataset.updatedAt}" /></li>
-                    <li class="slds-item">Available:{!v.dataset.available}</li>
-                    <li class="slds-item">Status:{!v.dataset.statusMsg}</li>
-                    <li class="slds-item">Type:{!v.dataset.type}</li>
+                    <li class="slds-item">データセットId:{!v.dataset.id}</li>
+                    <li class="slds-item">作成日:<lightning:formattedDateTime value="{!v.dataset.createdAt}"/></li>
+                    <li class="slds-item">更新日:<lightning:formattedDateTime value="{!v.dataset.updatedAt}" /></li>
+                    <li class="slds-item">有効:{!v.dataset.available}</li>
+                    <li class="slds-item">状況:{!v.dataset.statusMsg}</li>
+                    <li class="slds-item">タイプ:{!v.dataset.type}</li>
                 </ul>
             </aura:set>
 
@@ -52,10 +52,10 @@
                         <thead>
                             <tr class="slds-text-title_caps">
                                 <th scope="col">
-                                    <div class="slds-truncate" title="Name">Label</div>
+                                    <div class="slds-truncate" title="Name">ラベル</div>
                                 </th>
                                 <th scope="col">
-                                    <div class="slds-truncate" title="Examples">Examples</div>
+                                    <div class="slds-truncate" title="Examples">サンプル</div>
                                 </th>
                             </tr>
                         </thead>
@@ -75,19 +75,19 @@
                 </lightning:tab>
                 <lightning:tab onactive="{!c.onModelsTab}">
                     <aura:set attribute="label">
-                        Models <lightning:badge class="slds-badge_inverse" label="{!v.models.length}" />
+                        モデル <lightning:badge class="slds-badge_inverse" label="{!v.models.length}" />
                     </aura:set>
                     <table class="slds-table slds-table_bordered slds-table_cell-buffer">
                         <thead>
                             <tr class="slds-text-title_caps">
                                 <th scope="col">
-                                    <div class="slds-truncate" title="Model Id">Model Id</div>
+                                    <div class="slds-truncate" title="Model Id">モデルId</div>
                                 </th>
                                 <th scope="col">
-                                    <div class="slds-truncate" title="Progress">Progress</div>
+                                    <div class="slds-truncate" title="Progress">進行状況</div>
                                 </th>
                                 <th scope="col">
-                                    <div class="slds-truncate" title="Status">Status</div>
+                                    <div class="slds-truncate" title="Status">ステータス</div>
                                 </th>
                                 <th scope="col">
                                     <div class="slds-truncate" title="Stats"></div>

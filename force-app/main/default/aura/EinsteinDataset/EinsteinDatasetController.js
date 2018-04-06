@@ -88,9 +88,9 @@
           title: "Success!",
           type: "success",
           message:
-            "The model id for the training is " +
+            "この学習のモデルIdは " +
             response.getReturnValue() +
-            ". Go to the model tab for seeing the training progress."
+            " です。モデルタブで学習の進行状況を確認できます。"
         });
         toastEvent.fire();
       }
@@ -113,12 +113,12 @@
       } else if (response.getState() === "SUCCESS") {
         var toastEvent = $A.get("e.force:showToast");
         toastEvent.setParams({
-          title: "Success!",
+          title: "成功!",
           type: "success",
           message:
-            "The model id for the training is " +
+            "この学習のモデルIdは " +
             response.getReturnValue() +
-            ". Go to the model tab for seeing the training progress."
+            " です。モデルタブで学習の進行状況を確認できます。"
         });
         toastEvent.fire();
       }
